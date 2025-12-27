@@ -8,6 +8,7 @@ tasks: list[Task] = [
     Task(id=2, title="Build an API", description="Create a REST API with FastAPI"),
 ]
 
+
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
